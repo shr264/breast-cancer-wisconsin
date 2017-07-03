@@ -25,7 +25,7 @@ bcw = pd.read_csv('breast-cancer-wisconsin.txt',header=None)
 
 ### dropping 
 
-#columns = ['Sample code number',
+columns = ['Sample code number',
 'Clump Thickness',
 'Uniformity of Cell Size',
 'Uniformity of Cell Shape',
@@ -36,7 +36,7 @@ bcw = pd.read_csv('breast-cancer-wisconsin.txt',header=None)
 'Normal Nucleoli',
 'Mitoses', 
 'Class']
-#bcw.columns = [x.lower().replace(' ', '') for x in columns]
+bcw.columns = [x.lower().replace(' ', '') for x in columns]
 
 
 ### convert to numeric
